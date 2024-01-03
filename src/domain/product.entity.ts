@@ -6,9 +6,9 @@ type ProductProperties = {
 
 export class Product {
   private constructor(
-    private readonly id: string,
-    private readonly name: string,
-    private readonly price: number,
+    readonly id: string,
+    readonly name: string,
+    readonly price: number,
   ) {}
 
   static new(properties: ProductProperties): Product {
